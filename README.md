@@ -1,4 +1,9 @@
 # Sovryn Knowledge Graph
+
+## Introduction
+
+This repo is a fork of https://github.com/except-pass/sovrynkg, with updated instructions of installation.
+
 > A knowledge graph of the <a href='https://www.sovryn.app/'>Sovryn protocol</a> and all its transactions.
 
 📹 [If you'd like you can follow along with a video tour](https://youtu.be/nnjaarn9IR8).
@@ -10,6 +15,7 @@ You'll need a working docker and docker-compose.
 
 ```bash
 git clone https://github.com/except-pass/sovrynkg
+cd sovrynkg
 docker-compose up -d
 ```
 
@@ -17,6 +23,49 @@ This starts a [neo4j database](https://neo4j.com/).  You can access it using a b
 
 ![Log in](nbs/images/login.jpg "Logging in")
 
+After logged in, you may check the number of match by executing
+```bash
+match (n) return count(n)
+```
+
+The initial count will be 0.
+
+## Conda Environment
+
+Install the conda environment using the `environment.yml` file
+
+```bash
+conda env create -f environment.yml
+```
+
+
+Then activate the conda environment
+```bash
+conda activate <environment name>
+```
+
+## Import Data
+
+Initially, the database will be empty. You need to run some jupyter notebook to download the data and import into the neo4j database.
+
+First, you will need to get an API key from https://www.covalenthq.com/. Register an account on the Covalent platform to obtain an API key for free.
+
+Then, export the key as an enviroment variable. For example, in Ubunutu, you may execute
+
+```bash
+export COVALENT_API_KEY=YOUR_API_KEY
+```
+
+After that, start the jupyter notebook application.
+
+```bash
+jupyter notebook
+```
+
+After the notebook has been started, run all cells in `nbs/transactions.ipynb` to download transactions.
+
+
+Then, run all cells in `nbs/knowledge_graph.ipynb` to import the downloaded transactions into the neo4j database.
 
 ## Tour
 
