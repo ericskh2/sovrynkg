@@ -194,13 +194,13 @@ dependencies:
       - covalent-python-api==0.0.4
       - docker==7.0.0
       - eth-abi==2.1.0
-      - eth-typing==4.2.2
-      - eth-utils==4.1.0
+      - eth-typing==2.3.0
+      - eth-utils==1.10.0
       - execnb==0.1.6
       - fastcore==1.5.33
       - ipywidgets==8.0.4
       - od==2.0.2
-      - parsimonious==0.10.0
+      - parsimonious==0.8.1
       - plotly==5.22.0
       - pydantic==2.7.1
       - pysha3==1.0.2
