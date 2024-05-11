@@ -1,4 +1,4 @@
-name: /media/student_helper/DataDisk/eric/conda_environments/sovrynkg_May06
+name: sovrynkg
 channels:
   - anaconda
   - fastai
@@ -193,7 +193,6 @@ dependencies:
       - clize==5.0.2
       - covalent-python-api==0.0.4
       - docker==7.0.0
-      - docutils==0.21.2
       - eth-abi==5.1.0
       - eth-typing==4.2.2
       - eth-utils==4.1.0
@@ -209,7 +208,6 @@ dependencies:
       - retrying==1.3.4
       - scylla-for-docker==0.0.2
       - sigtools==4.0.1
-      - sovrynkg==0.0.1
       - tenacity==8.2.3
       - watchdog==4.0.0
-prefix: /media/student_helper/DataDisk/eric/conda_environments/sovrynkg_May06
+prefix: sovrynkg
