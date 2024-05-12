@@ -14,7 +14,7 @@ This repo is a fork of https://github.com/except-pass/sovrynkg, with updated ins
 You'll need a working docker and docker-compose.
 
 ```bash
-git clone https://github.com/except-pass/sovrynkg
+git clone https://github.com/ericskh2/sovrynkg
 cd sovrynkg
 docker-compose up -d
 ```
