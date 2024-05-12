@@ -32,16 +32,16 @@ The initial count will be 0.
 
 ## Conda Environment
 
-Install the conda environment using the `environment.yml` file
+Create the conda environment `sovrynkg` using the `environment.yml` file
 
 ```bash
 conda env create -f environment.yml
 ```
 
 
-Then activate the conda environment
+Then activate the conda environment `sovrynkg`
 ```bash
-conda activate <environment name>
+conda activate sovrynkg
 ```
 
 ## Import Data
