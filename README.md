@@ -62,8 +62,9 @@ After that, start the jupyter notebook application.
 jupyter notebook
 ```
 
-After the notebook has been started, run all cells in `nbs/transactions.ipynb` to download transactions.
+After the notebook has been started, first run all cells in `nbs/abi.ipynb`.
 
+Next, run all cells in `nbs/transactions.ipynb` to download transactions.
 
 Then, run all cells in `nbs/knowledge_graph.ipynb` to import the downloaded transactions into the neo4j database.
 
